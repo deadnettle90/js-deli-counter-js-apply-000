@@ -6,6 +6,22 @@ function takeANumber (katzDeliLine, name) {
   return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`;
 }
 
+// newPerson as is - number
+// tell them what their number is
+//1st customer = 1, 2nd customer = 2
+//add customer to line by number
+//tell customer what number they are
+//make sure the value increases as new person comes in
+var number = 0;
+
+function futureKatzDeli (katzDeliLine) {
+  number++;
+  katzDeliLine.push(number);
+  return `Welcome you are ${katzDeliLine.length} in line.`
+} 
+
+
+
 // =================== 2 ======================
 
  function nowServing (katzDeliLine) {
